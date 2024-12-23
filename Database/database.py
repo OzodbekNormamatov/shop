@@ -50,9 +50,3 @@ class database:
     #     self.cur.execute(f"""insert into shop(title,location,sum,opened_time,closed_time)"
     #            values("{shopModel.title}","{shopModel.locaiton}",{shopModel.sum},"{shopModel.openTime}","{shopModel.closedTime}");""")
 
-a = database()
-print(a.selectAllShop())
-a.insertShop(Shop("as","asd","asd","asd",90))
-print(a.selectAllShop())
-a.deleteShop(5)
-print(a.selectAllShop())
